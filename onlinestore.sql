@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 11, 2022 at 07:27 PM
+-- Generation Time: Jun 13, 2022 at 06:09 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.2
 
@@ -32,7 +32,7 @@ CREATE TABLE `products` (
   `title` varchar(255) NOT NULL,
   `description` varchar(255) DEFAULT NULL,
   `image` varchar(255) DEFAULT NULL,
-  `is_active` tinyint(1) NOT NULL,
+  `status` tinyint(1) NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
   `updated_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -41,7 +41,7 @@ CREATE TABLE `products` (
 -- Dumping data for table `products`
 --
 
-INSERT INTO `products` (`id`, `title`, `description`, `image`, `is_active`, `created_at`, `updated_at`) VALUES
+INSERT INTO `products` (`id`, `title`, `description`, `image`, `status`, `created_at`, `updated_at`) VALUES
 (1, 'Canon Camera', 'HD Camera', '/product/canon-90d-dslr-camera-with-18-55mm-lens/', 1, '2022-06-10 11:47:31', '2022-06-10 11:47:31'),
 (2, 'Sony Camera', 'HD Camera', '/product/canon-90d-dslr-camera-with-18-55mm-lens/', 0, '2022-06-10 11:47:31', '2022-06-10 11:47:31'),
 (3, 'Iphone Mobile', 'Iphone 12 Pro Max', '/product/canon-90d-dslr-camera-with-18-55mm-lens/', 1, '2022-06-10 11:47:31', '2022-06-10 11:47:31'),
